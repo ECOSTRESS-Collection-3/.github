@@ -13,7 +13,7 @@ This document will provide background information relevant to the ECOSTRESS miss
 ```mermaid
 flowchart TD
 L1B_GEO_PGE[L1B GEO PGE]
-L1_RAD_PGE[L1B RAD PGE]
+L1B_RAD_PGE[L1B RAD PGE]
 L1C_RAD_PGE[L1C RAD PGE]
 L2_LSTE_PGE[L2 LSTE PGE]
 L2_STARS_PGE[L2 STARS PGE]
@@ -28,16 +28,14 @@ L1CT_RAD_TILE["L1CT RAD Tiled Product<br>(Including Cloud)"]
 
 L2G_LSTE_GRID[L2G LSTE Gridded Product]
 L2T_LSTE_TILE[L2T LSTE Tiled Product]
-
 L2T_STARS_TILE[L2T STARS Tiled Product]
-
 L3T_JET_TILE[L3T JET Tiled Product]
 L4T_ESI_TILE[L4T ESI Tiled Product]
 L4T_WUE_TILE[L4T WUE Tiled Product]
 
 L1B_GEO_PGE --> L1B_GEO_SWATH
 
-L1_RAD_PGE --> L1_RAD_SWATH
+L1B_RAD_PGE --> L1_RAD_SWATH
 
 L1_RAD_SWATH --> L1C_RAD_PGE
 L1_RAD_SWATH --> L1B_GEO_PGE
@@ -73,6 +71,29 @@ The ECOSTRESS data product algorithms include:
 - [Level 3 Evapotranspiration](https://github.com/ECOSTRESS-Collection-3/ECOv003-L3-JET)
   - [Level 4 Evaporative Stress Index](https://github.com/ECOSTRESS-Collection-3/ECOv003-L3-JET)
   - [Level 4 Water Use Efficiency](https://github.com/ECOSTRESS-Collection-3/ECOv003-L3-JET)
+
+## ECOSTRESS Data Products
+
+| **Short Name** | **Long Name** |
+| --- | --- |
+| ECO_L1A_BB | ECOSTRESS Swath Black Body Instantaneous L1A Global 38 x 69 m V003 |
+| ECO_L1A_ENG | ECOSTRESS Swath Engineering Data Instantaneous L1A Global V003 |
+| ECO_L1A_PIX | ECOSTRESS Swath Pixel Data Instantaneous L1A Global 38 x 69 m V003 |
+| ECO_L1B_GEO | ECOSTRESS Swath Geolocation Instantaneous L1B Global 70 m V003 |
+| ECO_L1B_ATT | ECOSTRESS Swath Attitude and Ephemeris Instantaneous L1B Global V003 |
+| ECO_L1B_RAD | ECOSTRESS Swath Top of Atmosphere Calibrated Radiance Instantaneous L1B Global 70 m V003 |
+| ECO_L1CG_RAD | ECOSTRESS Gridded Top of Atmosphere Calibrated Radiance Instantaneous L1C Global 70 m V003 |
+| ECO_L1CT_RAD | ECOSTRESS Tiled Top of Atmosphere Calibrated Radiance Instantaneous L1C Global 70 m V003 |
+| ECO_L2G_LSTE | ECOSTRESS Gridded Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m V003 |
+| ECO_L2G_CLOUD | ECOSTRESS Gridded Cloud Mask Instantaneous L2 Global 70 m V003 |
+| ECO_L2T_LSTE | ECOSTRESS Tiled Land Surface Temperature and Emissivity Instantaneous L2 Global 70 m V003 |
+| ECO_L2T_STARS | ECOSTRESS Tiled Ancillary NDVI and Albedo L2 Global 70 m V003 |
+| ECO_L3T_JET | ECOSTRESS Tiled Evapotranspiration Instantaneous and Daytime L3 Global 70 m V003 |
+| ECO_L3T_ET_ALEXI | ECOSTRESS Tiled Evapotranspiration disALEXI 24-Hour L3 CONUS 70 m V003 |
+| L3T_ETAUX | ECOSTRESS Tiled Ecosystem Auxiliary Inputs L3 Global 70 m V003 |
+| ECO_L4T_ESI | ECOSTRESS Tiled Evaporative Stress Index PT-JPL Instantaneous L4 Global 70 m V003 |
+| ECO_L4T_ESI_ALEXI | ECOSTRESS Tiled Evaporative Stress Index disALEXI 24-Hour L4 CONUS 70 m V003 |
+| ECO_L4T_WUE | ECOSTRESS Tiled Water Use Efficiency Instantaneous L4 Global 70 m V003 |
 
 ## Evapotranspiration Models
 
